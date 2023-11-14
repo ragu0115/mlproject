@@ -3,6 +3,7 @@
 
 import sys # Provides functions and variables that manipulate Python Runtime environment
 # sys contains a list of directories that the interpreter will search in for the required module
+from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info() # will tell u where the exception has occured such as line and location

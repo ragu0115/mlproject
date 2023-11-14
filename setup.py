@@ -2,21 +2,21 @@
 from setuptools import find_packages,setup
 from typing import List
 
-HYPHEN_E_DOT='-e .'
-# Function that will get all packages
+HYPEN_E_DOT='-e .'
 def get_requirements(file_path:str)->List[str]:
     '''
     this function will return the list of requirements
     '''
     requirements=[]
     with open(file_path) as file_obj:
-        requirments=file_obj.readlines()
-        requirments=[req.replace("\n","") for req in requirements]
-        
-        if HYPHEN_E_DOT in requirments:
-            requirements.remove(HYPHEN_E_DOT)
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
 
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
+    
     return requirements
+
 
 # Metadata of entire project
 setup(
