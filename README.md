@@ -4,6 +4,8 @@ Dataset Source Link : [https://www.kaggle.com/datasets/shivamb/machine-predictiv
 
 # Approach for the project 
 
+Modularly Programmed the following in created Anaconda Development Environment
+
 1. Data Ingestion : 
     * In Data Ingestion phase the data is first read as csv. 
     * Then the data is split into training and testing and saved as csv files.
